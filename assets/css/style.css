@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    height:100vh ;
+}
+
+header{
+    background-color: aqua;
+    height: 70px;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    height: auto;
+    background: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
