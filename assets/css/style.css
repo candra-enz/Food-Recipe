@@ -1,7 +1,10 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 body{
@@ -12,19 +15,257 @@ body{
 }
 
 header{
-    background-color: aqua;
+    background-color: 	#F0F8FF; 
     height: 70px;
-    padding: 0 12px;
+    padding: 0 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
+header .brand h1{
+color: #FF8C00;
+ font-size: 27px;
+font-weight: 700;
+
+}
+
+
+/* inputSearch-Start */
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    box-sizing: border-box;
+    transition:.5s;
+    
+}
+input[type="text"]{
+    background: white;
+    width: 270px;
+    height:40px;
+    outline:none;
+    border:none;
+    padding:0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+
+
+input[type="submit"]{
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height:40px;
+    border: none;
+    outline:none;
+    background: #FF8C00;
+    color: white;
+
+}
+
+
+input[type="submit"]:hover{
+
+    background: #ff4d00;
+
+}
+/* inputSearch-End */
+
 .container{
+    padding: 70px;
     height: auto;
-    background: wheat;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
+.content{
+    width: 100%;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  
+   
+}
+
+/* card-start */
+
+.card{
+    min-width: 320px;
+    max-width: 320px;
+    height: 400px;
+    background-color:#F0F8FF; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: -20px 20px 10px rgba(0, 0,0,0.2);
+  
+}
+
+
+.content .card .image{
+    width: 100%;
+    height: 70%;
+    
+}
+
+.content .card .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px  10px 0px 0px;
+    
+}
+.content .card .food{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30%;
+   
+}
+
+
+.content .card h3{
+    color: #000000;
+}
+
+
+.content .card .food h3{
+  width: 100%;
+}
+
+
+
+.content .card .food .recipe-btn{ 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    padding: 4px 9px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    background: #FF8C00;
+    color: white;
+}
+
+.content .card .food .recipe-btn:hover{ 
+     background: #ff4d00;
+}
+
+/* card-end */
+
+.detail-food{
+    left: 25%;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    background-color: #FF8C00;
+    height: 90vh;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 40px 40px;
+
+
+
+}
+
+.detail-food span{
+
+color: black;
+font-weight: 700;
+font-size: 20px;
+}
+
+.detail-food .title-food{
+   
+color: white;
+font-weight: 700;
+font-size: 20px;
+
+}
+
+.detail-food .Ingredients{
+width: auto;
+color: black;
+font-weight: 400;
+font-size: 14px;
+ height: 5%;
+
+}
+
+.detail-food .Ingredients p{
+    background-color: white;
+    padding:4px 20px;
+    border-radius: 7px;
+}
+
+
+.detail-food button{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0 9px;
+    border-radius: 100%;
+    height: 5%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+   align-self: flex-end;
+    
+  
+}
+
+.detail-food button:hover{
+     padding: 0 9.9px;
+    background: red;
+    color: #000000;
+}
+
+
+
+
+
+.detail-food .instruction{
+ 
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: white;
+}
+
+.detail-food .instruction .instruction-body p{
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing:1px ;
+}
+.detail-food .image{
+   
+   height: 25%;
+     display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-food .image img{
+    height:90px; 
+    width:90px;
+    border-radius:100%;
+}
+
+.detail-food .image a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
